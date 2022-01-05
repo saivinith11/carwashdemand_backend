@@ -1,0 +1,5 @@
+package com.usermanagement.model;
+
+public class Login {
+
+}

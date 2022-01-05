@@ -1,0 +1,133 @@
+package com.orderservice.model;
+
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection="orderdetails")
+public class Orderdetails {
+	
+	@Id
+  private Long id;
+  @NotEmpty(message="carname should not be empty")
+  private String CarName;
+  @NotEmpty(message="model should not be empty")
+  private String Model;
+  @NotEmpty(message="washername should not be empty")
+  private String washerName;
+  @NotNull(message="washpackageid should not be empty")
+  private int washpackageId;
+  @NotEmpty(message="preffered should not be empty")
+  private String PrefferedDate;
+  @NotNull(message="contactNo should not be empty")
+  private long contactNo;
+  
+  
+  
+  
+public Orderdetails() {
+	super();
+}
+@Transient
+public static final String SEQUENCE_NAME = "users_sequence";
+
+
+
+
+public static String getSequenceName() {
+	return SEQUENCE_NAME;
+}
+
+
+
+
+
+
+
+public Orderdetails( @NotEmpty(message = "carname should not be empty") String carName,
+		@NotEmpty(message = "model should not be empty") String model,
+		@NotEmpty(message = "washername should not be empty") String washerName,
+		@NotNull(message = "washpackageid should not be empty") int washpackageId,
+		@NotEmpty(message = "preffered should not be empty") String prefferedDate,
+		@NotNull(message = "contactNo should not be empty") long contactNo) {
+	super();
+	CarName = carName;
+	Model = model;
+	this.washerName = washerName;
+	this.washpackageId = washpackageId;
+	PrefferedDate = prefferedDate;
+	this.contactNo = contactNo;
+}
+
+
+public Long getId() {
+	return id;
+}
+
+public void setId(Long id) {
+	this.id = id;
+}
+
+public String getCarName() {
+	return CarName;
+}
+
+public void setCarName(String carName) {
+	CarName = carName;
+}
+
+public String getModel() {
+	return Model;
+}
+
+public void setModel(String model) {
+	Model = model;
+}
+
+public String getWasherName() {
+	return washerName;
+}
+
+
+public void setWasherName(String washerName) {
+	this.washerName = washerName;
+}
+
+public int getWashpackageId() {
+	return washpackageId;
+}
+
+public void setWashpackageId(int washpackageId) {
+	this.washpackageId = washpackageId;
+}
+
+public String getPrefferedDate() {
+	return PrefferedDate;
+}
+
+public void setPrefferedDate(String prefferedDate) {
+	PrefferedDate = prefferedDate;
+}
+
+public long getContactNo() {
+	return contactNo;
+}
+
+public void setContactNo(long contactNo) {
+	this.contactNo = contactNo;
+}
+
+@Override
+public String toString() {
+	return "Orderdetails [id=" + id + ", CarName=" + CarName + ", Model=" + Model + ", washerName=" + washerName
+			+ ", washpackageId=" + washpackageId + ", PrefferedDate=" + PrefferedDate + ", contactNo=" + contactNo
+			+ "]";
+}
+
+  
+  
+  
+}

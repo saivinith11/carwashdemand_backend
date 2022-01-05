@@ -1,0 +1,7 @@
+server.port=8082
+spring.data.mongodb.uri=mongodb+srv://vini:test@cluster0.qllge.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
+spring.data.mongodb.database=adminservice
+spring.application.name=Adminservice
+eureka.instance.hostname=localhost
+jwt.secret=secretkey123

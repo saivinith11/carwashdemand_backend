@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;LoginService.java&apos; to &apos;Adminservice/src/main/java/com.adminservice.service&apos;&#x0D;&#x0A;- Original project: &apos;UserManagement&apos;&#x0D;&#x0A;- Destination element: &apos;Adminservice/src/main/java/com.adminservice.service&apos;&#x0D;&#x0A;- Original element: &apos;com.usermanagement.service.LoginService.java&apos;" description="Copy compilation unit" destination="=Adminservice/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.adminservice.service" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.usermanagement.service{LoginService.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1641021596374" units="1" version="1.0"/>
+</session>
